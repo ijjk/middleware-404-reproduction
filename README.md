@@ -8,9 +8,9 @@ Repro:
 2. Deploy the app to Vercel.
 3. Load the homepage in a browser tab, but do not interact with any links.
 4. Redeploy the app (wither with a simple code change, or by using the Vercel dashboard to redeploy the existing code).
-5. Return to the existing tab but do not refresh the page. Attempt to follow the link to /other.
+5. Return to the existing tab but do not refresh the page. Click the link to /other, and then click the link from that page back to /.
 
-Expected: /other should load
+Expected: The navigations should succeed.
 Actual: The custom 404 page is shown.
 
-A hard refresh will successfully server render /other.
+While viewing the 404 page, a hard refresh will successfully display the server rendered page.
