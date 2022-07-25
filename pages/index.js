@@ -11,3 +11,9 @@ export default function IndexPage() {
 		</div>
 	);
 }
+
+export async function getServerSideProps() {
+	return {
+		props: {},
+	};
+}

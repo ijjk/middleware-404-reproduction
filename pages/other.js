@@ -11,3 +11,9 @@ export default function OtherPage() {
 		</div>
 	);
 }
+
+export async function getServerSideProps() {
+	return {
+		props: {},
+	};
+}
